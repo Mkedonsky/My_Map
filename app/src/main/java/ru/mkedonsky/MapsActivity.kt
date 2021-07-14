@@ -47,6 +47,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val moscow = LatLng(55.7522200, 37.6155600)
         mMap.addMarker(MarkerOptions().position(moscow).title("Marker in Moscow"))
         mMap.moveCamera(CameraUpdateFactory.newLatLng(moscow))
+        fetchCoordinates()
 
     }
     private fun fetchCoordinates() {
